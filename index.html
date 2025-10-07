@@ -170,12 +170,13 @@
             try {
                 console.log('토큰 교환 시작, 코드:', code);
 
-                // 카카오 클라이언트 ID 
-                const KAKAO_CLIENT_ID = 'b7fb62e23bea2690b707e2f9baab3717';
-                const REDIRECT_URI = window.location.href.split('?')[0];
+                // 카카오 클라이언트 ID
+                const KAKAO_CLIENT_ID = '95d54580d666b90e476de42db759f7aa';
+                const REDIRECT_URI = 'https://oortmealy.github.io/kakao-callback';
 
                 console.log('클라이언트 ID:', KAKAO_CLIENT_ID);
                 console.log('리다이렉트 URI:', REDIRECT_URI);
+                console.log('현재 URL:', window.location.href);
 
                 // 카카오 토큰 엔드포인트 호출
                 const response = await fetch('https://kauth.kakao.com/oauth/token', {
